@@ -1,0 +1,429 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end of css reset*/
+
+
+
+
+/*variables*/
+
+:root {
+    --colorOne: #ffffff;
+    --colorTwo: #000000;
+    --colorThree: #37375e;
+    --colorFour: #4E6FA5;
+    --colorFive: #ffffff;
+    --colorSix: #356288;
+    --fontOne: 'Coiny', cursive;
+    --fontTwo: 'News Cycle', sans-serif;
+}
+
+/*nav sytle*/
+
+nav {
+    background-color: var(--colorTwo);
+    font-family: var(--fontTwo);
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 50%;
+}
+
+.topnav ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--colorOne);
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: var(--colorFour);
+}
+
+.icon {
+    display: none;
+}
+
+@media only screen and (max-width: 967px) {
+
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .topnav ul li {
+        display: none;
+    }
+    
+    .topnav a.icon {
+        display: inline-block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 90%;
+    }
+
+    .topnav.responsive ul li {
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid var(--colorOne);
+      }
+    
+    .topnav ul {
+        width: 100%;
+    }
+
+}
+
+
+/*showcase*/
+
+#showcase {
+    background-color: var(--colorFour); /* Used if the image is unavailable */
+    height: 100%; /* You must set a specified height */
+    background-position: center;/* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    text-align: center;
+}
+
+.showcaseDiv {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+}
+
+.showcaseDiv2 {
+    display: inline-block;
+    width: 45%;
+}
+
+.imgDiv {
+    width: 100%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fintechImg {
+    width: 100%;
+}
+
+.showcaseH1 {
+    font-family: var(--fontTwo);
+    font-size: 5em;
+    color: var(--colorOne);
+}
+
+.showcaseParagraph {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: var(--fontTwo);
+    font-size: 1.5em;
+    color: var(--colorTwo);
+}
+
+.showcaseButton {
+    width: 200px;
+    padding: 20px;
+    font-family: var(--fontTwo);
+    font-size: 1.5em;
+    background-color: var(--colorTwo);
+    color: var(--colorFour);
+    border: none;
+}
+
+.showcaseButton:hover {
+    background-color: var(--colorThree);
+}
+
+@media only screen and (max-width: 969px) {
+
+    .showcaseDiv {
+        padding-top: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 810px) {
+
+    .showcaseDiv {
+        padding-top: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 608px) {
+
+    .showcaseH1 {
+        font-size: 5em;
+    }
+
+    .showcaseDiv {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+
+    .showcaseDiv {
+        padding-top: 150px;
+    }
+
+    .showcaseH1 {
+        font-size: 3.5em;
+    }
+
+    .showcaseParagraph {
+        font-size: 1.5em;
+    }
+
+}
+
+
+
+
+/*contact*/
+
+.contactH2 {
+    text-align: center;
+    font-family: var(--fontTwo);
+    font-size: 4em;
+    color: var(--colorFour);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contactContainer {
+    background-color: var(--colorThree);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactFormDiv {
+    display: inline-block;
+    width: 80%;
+    background-color:;
+}
+
+@media only screen and (max-width: 415px) {
+
+    .contactFormDiv {
+        display: block;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactContainer .socialMedia ul li {
+        padding-left: 10px;
+    }
+
+}
+
+form {
+    width:80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    border: none;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+textarea {
+    display: block;
+    padding: 0;
+    width: 100%;
+    border: none;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#submit {
+    border: none;
+    background-color: var(--colorFour);
+    padding-top: 20px;
+    color: var(--colorTwo);
+    margin-bottom: 100px;
+    border: none'
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: var(--colorTwo);
+    color: var(--colorFour);
+}
+
+@media only screen and (max-width: 1024px) {
+
+    form {
+        width: 60%;
+    }  
+
+}
+
+@media only screen and (max-width: 415px) {
+
+    form {
+        width: 80%;
+    }
+
+}
+
+
+.aboutDiv h2 {
+    text-align: center;
+    font-family: var(--fontTwo);
+    font-size: 4em;
+    color: var(--colorFour);
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.aboutDiv p {
+    text-align: left;
+    font-family: var(--fontTwo);
+    font-size: 1.25em;
+    color: var(--colorFour);
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    line-height: 1.5;
+
+}
+
+.aboutContainer2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.aboutDiv2 h3 {
+    font-family: var(--fontTwo);
+    font-size: 2em;
+    color: var(--colorFour);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.aboutDiv2 h4 {
+    font-family: var(--fontTwo);
+    font-size: 1.25em;
+    color: var(--colorFour);
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+.activities {
+    padding: 20px;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.activities img {
+    width: 100%;
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    font-family: var(--fontTwo);
+    font-size: 3em;
+    color: var(--colorFour);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-family: var(--fontTwo);
+    font-size: 2em;
+    color: var(--colorFour);
+    padding-bottom: 50px;
+}
+
+footer img {
+    width: 50px;
+    vertical-align: middle;
+}
